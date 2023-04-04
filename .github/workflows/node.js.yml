@@ -28,7 +28,7 @@ jobs:
         script: |
             cd erp_frontend
             cd erp-react-frontend 
-            git pull git@github.com:PRITYRAWA/erp_frontend.git
+            git pull
             npm run build
             cd
             cp -R erp_frontend/erp-react-frontend/build/ react_deploy
