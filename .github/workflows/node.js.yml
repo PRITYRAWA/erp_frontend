@@ -26,12 +26,12 @@ jobs:
         port: ${{ secrets.PORT }}
         
         script: |
-            cd react_frontend
+            cd erp_frontend
             cd erp-react-frontend 
-            git pull
+            git pull git@github.com:PRITYRAWA/erp_frontend.git
             npm run build
             cd
-            cp -R react_frontend/erp-react-frontend/build/ react_deploy
+            cp -R erp_frontend/erp-react-frontend/build/ react_deploy
             systemctl stop nginx
             systemctl service nginx reload
             systemctl restart nginx
