@@ -17,7 +17,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Deploy package to digitalocean
+    - name: Deploy package to ubuntu server
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.UBUNTU_IP }}
