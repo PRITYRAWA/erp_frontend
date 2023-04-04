@@ -17,15 +17,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+    - name: Deploy package to digitalocean
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.UBUNTU_IP }}
         username: ${{ secrets.UBUNTU_USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        publish_dir: erp_frontend
+        
         script: |
            cd erp_frontend
-           git clone git@github.com:vedanshu-insonix/erp-react-frontend.git
+           cd erp-react-frontend
+           npm install --force
+           npm run build
