@@ -1,0 +1,13 @@
+[
+    {
+        "id": 1,
+        "title": "Customer",
+        "menu": {
+            "id": 6,
+            "application": "Sales",
+            "menu_item": "addresses",
+            "form_name": "addresses",
+            "sequence": 2
+        }
+    }
+]

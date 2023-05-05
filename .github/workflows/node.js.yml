@@ -1,0 +1,37 @@
+name: deployee node.js CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Deploy package to digitalocean
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.UBUNTU_IP }}
+        username: ${{ secrets.UBUNTU_USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        
+        script: |
+            cd erp_frontend
+            cd new_erp-react-frontend
+            git pull
+            npm run build
+            cd
+            cp -R erp_frontend/new_erp-react-frontend/build/ react_deploy
+            systemctl stop nginx
+            systemctl service nginx reload
+            systemctl restart nginx
+            systemctl status nginx

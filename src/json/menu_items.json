@@ -1,0 +1,44 @@
+[
+    {
+        "id": 5,
+        "application": "Sales",
+        "menu_item": "Customers",
+        "form_name": "Customers",
+        "sequence": 1
+    },
+    {
+        "id": 6,
+        "application": "Sales",
+        "menu_item": "Addresses",
+        "form_name": "Addresses",
+        "sequence": 2
+    },
+    {
+        "id": 7,
+        "application": "Sales",
+        "menu_item": "Leads",
+        "form_name": "Leads",
+        "sequence": 3
+    },
+    {
+        "id": 8,
+        "application": "System",
+        "menu_item": "Menus",
+        "form_name": "Menus",
+        "sequence": 1
+    },
+    {
+        "id": 9,
+        "application": "System",
+        "menu_item": "Users",
+        "form_name": "Users",
+        "sequence": 2
+    },
+    {
+        "id": 10,
+        "application": "System",
+        "menu_item": "Configurations",
+        "form_name": "Configurations",
+        "sequence": 4
+    }
+]

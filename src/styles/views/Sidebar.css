@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    padding: 0px 12px;
+}
+
+body {
+    background: #f5f6fa;
+}
+
+.profile h4 {
+    font-size: 28px;
+}
+
+.wrapper .sidebar {
+    position: fixed;
+    top: 3px;
+    left: -6px;
+    /* left: -225px; */
+    /* right: 1264px; */
+    width: 272px;
+    height: 105vh;
+    /* padding: 20px 0; */
+    padding-top: 100px;
+    transition: all 0.5s ease;
+    overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebar {
+    display: none;
+    background-color: #e6e6e8;
+    border: 1px solid black;
+    padding-top: 100px;
+    z-index: 20;
+}
+
+
+.wrapper .sidebar .profile {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper .sidebar .profile img {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+
+.icon-list {
+    height: 26px;
+}
+
+.wrapper .sidebar .profile h4 {
+    font-size: 20px;
+    color: #000000;
+    margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p {
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+
+.wrapper .sidebar ul {
+    padding-left: 0rem;
+}
+
+.wrapper .sidebar ul li a {
+    display: block;
+    padding: 13px 30px;
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+}
+
+.wrapper .sidebar ul li a .icon {
+    color: #dee4ec;
+    width: 30px;
+    display: inline-block;
+}
+
+
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active {
+    color: #0c7db1;
+    background-color: #1C75BC;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon {
+    color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before {
+    display: block;
+}
+
+.wrapper .section {
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar {
+    background: rgb(7, 105, 185);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+
+}
+
+.wrapper .section .top_navbar .hamburger a {
+    font-size: 28px;
+    color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover {
+    color: #a2ecff;
+}
+
+body.active .wrapper .sidebar {
+    left: -225px;
+}
+
+body.active .wrapper .section {
+    margin-left: 0;
+    width: 100%;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a,
+.dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover,
+.dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+    margin-left: 200px;
+    /* Same as the width of the sidenav */
+    font-size: 20px;
+    /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+    background-color: green;
+    color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+    display: none;
+    padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon background-color: #262626; */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.menu_icon {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}

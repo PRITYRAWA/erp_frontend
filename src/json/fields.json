@@ -1,0 +1,133 @@
+[
+    {
+        "id": 1,
+        "application": "Sales",
+        "form": "Customers",
+        "name":"id",
+        "panel":"",
+        "position":1
+    },
+    {
+        "id": 2,
+        "application": "Sales",
+        "form": "Customers",
+        "name":"name",
+        "panel":"",
+        "position":1
+    },
+    {
+        "id": 4,
+        "application": "Sales",
+        "form": "Customers",
+        "name":"source",
+        "panel":"",
+        "position":1
+    }, 
+    {
+        "id": 5,
+        "application": "Sales",
+        "form": "Customers",
+        "name":"payment_method",
+        "panel":"",
+        "position":1
+    },
+    {
+        "id": 3,
+        "application": "Sales",
+        "form": "Customers",
+        "name":"overdue",
+        "panel":"",
+        "position":1
+    },
+    {
+        "id": 6,
+        "application": "Sales",
+        "form": "Customers",
+        "name":"account_balance",
+        "panel":"",
+        "position":1
+    },
+    {
+        "id": 7,
+        "application": "Sales",
+        "form": "Customers",
+        "name":"credit_limit",
+        "panel":"",
+        "position":1
+    },
+
+    {
+        "id": 8,
+        "application": "System",
+        "form": "Menus",
+        "name":"id",
+        "panel":"",
+        "position":1
+    },
+    {
+        "id": 9,
+        "application": "System",
+        "form": "Menus",
+        "name":"application",
+        "panel":"",
+        "position":1
+    },
+    {
+        "id": 10,
+        "application": "System",
+        "form": "Menus",
+        "name":"menu_item",
+        "panel":"",
+        "position":1
+    },
+    {
+        "id": 11,
+        "application": "System",
+        "form": "Menus",
+        "name":"form_name",
+        "panel":"",
+        "position":1
+    },
+    {
+        "id": 12,
+        "application": "System",
+        "form": "Menus",
+        "name":"sequence",
+        "panel":"",
+        "position":1
+    },
+    {
+        "id": 12,
+        "application": "System",
+        "form": "Users",
+        "name":"email",
+        "panel":"",
+        "position":1
+    },
+    {
+        "id": 13,
+        "application": "System",
+        "form": "Users",
+        "name":"username",
+        "panel":"",
+        "position":1
+    },
+    {
+        "id": 13,
+        "application": "System",
+        "form": "Fields",
+        "name":"id",
+        "panel":"",
+        "position":1
+    },
+    {
+        "id": 13,
+        "application": "System",
+        "form": "Fields",
+        "name":"name",
+        "panel":"",
+        "position":1
+    }
+
+    
+]

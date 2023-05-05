@@ -1,0 +1,150 @@
+[
+    {
+        "id": 130,
+        "choices": [],
+        "label": "Last Name",
+        "default": "",
+        "data": "Last Name",
+        "table": "Addresses",
+        "parent_field": null,
+        "field": "last_name",
+        "type": "enterable",
+        "link": null,
+        "column": null,
+        "position": null,
+        "section": null
+    },
+    {
+        "id": 138,
+        "choices": [],
+        "label": "Address 3",
+        "default": "",
+        "data": "Address 3",
+        "table": "Addresses",
+        "parent_field": null,
+        "field": "address_3",
+        "type": "enterable",
+        "link": null,
+        "column": null,
+        "position": null,
+        "section": null
+    },
+    {
+        "id": 139,
+        "choices": [],
+        "label": "City",
+        "default": "",
+        "data": "City",
+        "table": "Addresses",
+        "parent_field": null,
+        "field": "city",
+        "type": "enterable",
+        "link": null,
+        "column": null,
+        "position": null,
+        "section": null
+    },
+    {
+        "id": 140,
+        "choices": [
+            {
+                "id": 1,
+                "system_name": "DELHI",
+                "parentId": 680
+            },
+            {
+                "id": 2,
+                "system_name": "PUNE",
+                "parentId": 680
+            },
+            {
+                "id": 3,
+                "system_name": "PUNJAB",
+                "parentId": 680
+            },
+            {
+                "id": 4,
+                "system_name": "VANCUOVER",
+                "parentId": 682
+            },
+            {
+                "id": 5,
+                "system_name": "BRAMPTON",
+                "parentId": 682
+            }
+        ],
+        "label": "State",
+        "default": "",
+        "data": "State",
+        "table": "Addresses",
+        "parent_field": "country",
+        "field": "state",
+        "type": "dropdown",
+        "link": null,
+        "column": null,
+        "position": null,
+        "section": null
+    },
+    {
+        "id": 141,
+        "choices": [],
+        "label": "Code",
+        "default": "",
+        "data": "Code",
+        "table": "Addresses",
+        "parent_field": null,
+        "field": "postal_code",
+        "type": "enterable",
+        "link": null,
+        "column": null,
+        "position": null,
+        "section": null
+    },
+    {
+        "id": 142,
+        "choices": [],
+        "label": "City/State/Code",
+        "default": "",
+        "data": "City/State/Code",
+        "table": "Addresses",
+        "parent_field": null,
+        "field": "city_state_code",
+        "type": "enterable",
+        "link": null,
+        "column": null,
+        "position": null,
+        "section": null
+    },
+    {
+        "id": 143,
+        "choices": [
+            {
+                "id": 680,
+                "system_name": "INDIA"
+            },
+            {
+                "id": 681,
+                "system_name": "PAKISTAN"
+            },
+            {
+                "id": 682,
+                "system_name": "CANADA"
+            },
+            {
+                "id": 683,
+                "system_name": "SRI LANKA"
+            }
+        ],
+        "label": "Country",
+        "default": null,
+        "data": "Country",
+        "table": "Addresses",
+        "parent_field": null,
+        "field": "country",
+        "type": "dropdown",
+        "link": null,
+        "column": null,
+        "position": null,
+        "section": null
+    }
+]

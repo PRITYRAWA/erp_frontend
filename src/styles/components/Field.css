@@ -1,0 +1,60 @@
+.fieldWrap{
+    float: left;
+    width: 50%;
+    padding:5px 0px 5px 0px;
+}
+
+.fieldWrapModal{
+    float: left;
+    width: 75%;
+    padding:5px 0px 5px 0px;
+}
+
+
+.formLabel{
+    font-weight: bold;
+    font-size: 15px;
+    display: inline;
+}
+
+.formValue{
+    margin-left:25px;
+    display: inline;
+}
+
+.formInput{
+    margin-left:15px;
+}
+
+
+.fieldRtl{
+    direction: rtl;   
+}
+
+.formButton{
+    cursor: pointer;
+    height: 31px;
+}
+
+
+
+.formField{
+	border-style: solid !important;
+    border-color: rgba(229, 229, 229, 1.0);
+    border-top-width: 1px !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 1px !important;
+    -webkit-border-top-left-radius: 5px !important;
+    -moz-border-radius-topleft: 5px !important;
+    border-top-left-radius: 5px !important;
+    -webkit-border-top-right-radius: 5px !important;
+    -moz-border-radius-topright: 5px !important;
+    border-top-right-radius: 5px !important;
+    -webkit-border-bottom-right-radius: 5px !important;
+    -moz-border-radius-bottomright: 5px !important;
+    border-bottom-right-radius: 5px !important;
+    -webkit-border-bottom-left-radius: 5px !important;
+    -moz-border-radius-bottomleft: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
